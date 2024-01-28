@@ -18,14 +18,4 @@ class piso_seq_item extends uvm_sequence_item;
     super.new(name);
   endfunction
   
-  function string piso_seq_item::convert2string();
-  
-  string s;
-  
-  $sformat(s, "%s\n", super.convert2string());
-  
-  $sformat(s, "%s\n piso_out\t%0h\n resetn\t%0h\n load\t%0h\n LSB\t%0h\n piso_in\t%0h\n", s, piso_out, resetn, load, LSB, piso_in);
-  
-  endfunction
-  
 endclass

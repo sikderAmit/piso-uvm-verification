@@ -1,12 +1,11 @@
 class piso_sequence extends uvm_sequence;
 
-  //class-type registration
   `uvm_object_utils(piso_sequence)
 
-  //handle declaration
+  //transaction handle declaration
   piso_seq_item item;
 
-  //constructor
+  //constructor function
   function new(string name = "piso_sequence");
     super.new(name);
   endfunction
@@ -50,10 +49,9 @@ endclass
 //reset class
 class reset_seq extends piso_sequence;
 
-  //class-type registration
   `uvm_object_utils(reset_seq)
 
-  //constructor
+  //constructor function
   function new(string name = "reset_seq");
     super.new(name);
   endfunction
@@ -68,12 +66,12 @@ endclass
 //write class
 class write_seq extends piso_sequence;
 
-  //class-type registration
   `uvm_object_utils(write_seq)
 
+  //internal veriable declaration
   logic [`WIDTH-1:0] data;
 
-  //constructor
+  //constructor function
   function new(string name = "write_seq");
     super.new(name);
   endfunction
@@ -88,12 +86,12 @@ endclass
 //read class
 class read_seq extends piso_sequence;
 
-  //class-type registration
   `uvm_object_utils(read_seq)
 
+  //internal veriable declaration
   logic x;
 
-  //constructor
+  //constructor function
   function new(string name = "read_seq");
     super.new(name);
   endfunction
@@ -104,4 +102,3 @@ class read_seq extends piso_sequence;
   endtask
 
 endclass
-

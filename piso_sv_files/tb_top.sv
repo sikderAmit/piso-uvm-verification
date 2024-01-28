@@ -12,7 +12,7 @@ module tb_top;
 
 //clock generation
 bit clk;
-always #5 clk = ~clk;
+always #10 clk = ~clk;
 
 //interface instanciation
 piso_intf intf(clk);

@@ -1,10 +1,10 @@
 /*-------------------------------------------------
-		project				: piso uvm testBench
-        creator				: Amit Sikder
-        Created   			: 14.11.2023
-		Number of files     : 14
+	project				  : piso uvm testBench
+  creator				  : Amit Sikder
+  Created   		  : 14.11.2023
+	Number of files : 14
 ---------------------------------------------------
-		Description: This is the piso RTL
+	Description: This is the piso RTL
 ---------------------------------------------------
 */
 `define WIDTH 8
